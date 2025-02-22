@@ -60,11 +60,9 @@ function view() {
   let res = JSON.parse(localStorage.getItem("reg")) || [];
   res.map((el) => {
     heroResult.innerHTML = `
-
         <img src="${el.img}" alt="img">
         <h1>${el.name}</h1>
         <h1>${el.age}</h1>
-
         `;
   });
 }
